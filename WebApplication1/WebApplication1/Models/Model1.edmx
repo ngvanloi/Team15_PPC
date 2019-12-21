@@ -441,7 +441,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <EntityContainer Name="PPCDBEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="PPCDBEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Cities" EntityType="Self.City" />
           <EntitySet Name="Districts" EntityType="Self.District" />
           <EntitySet Name="Full_Contract" EntityType="Self.Full_Contract" />
@@ -485,7 +485,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="PPCDBModelStoreContainer" CdmEntityContainer="PPCDBEntities">
+        <EntityContainerMapping StorageEntityContainer="PPCDBModelStoreContainer" CdmEntityContainer="PPCDBEntities1">
           <EntitySetMapping Name="Cities">
             <EntityTypeMapping TypeName="PPCDBModel.City">
               <MappingFragment StoreEntitySet="City">

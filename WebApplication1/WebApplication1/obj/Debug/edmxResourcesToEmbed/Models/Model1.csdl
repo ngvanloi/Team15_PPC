@@ -203,7 +203,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <EntityContainer Name="PPCDBEntities" annotation:LazyLoadingEnabled="true">
+  <EntityContainer Name="PPCDBEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="Cities" EntityType="Self.City" />
     <EntitySet Name="Districts" EntityType="Self.District" />
     <EntitySet Name="Full_Contract" EntityType="Self.Full_Contract" />

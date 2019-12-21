@@ -8,10 +8,19 @@ namespace WebApplication1.Controllers
 {
     public class HomeController : Controller
     {
-        PPCDBEntities model = new PPCDBEntities();
+        PPCDBEntities1 model = new PPCDBEntities1();
+        [HttpGet]
         public ActionResult Index()
         {
             var p = model.Properties.ToList();
+            return View(p);
+        }
+
+        [HttpPost]
+        public ActionResult Index(string keyword)
+        {
+            var p = model.Properties.Where(x => x.Property_Name.Contains(keyword)).ToList();
+
             return View(p);
         }
 

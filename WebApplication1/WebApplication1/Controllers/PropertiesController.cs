@@ -12,14 +12,10 @@ namespace WebApplication1.Controllers
 {
     public class PropertiesController : Controller
     {
-        private PPCDBEntities model = new PPCDBEntities(); 
+        private PPCDBEntities1 model = new PPCDBEntities1();
         // GET: Properties
-        public ActionResult Index()
-        {
-            var properties = model.Properties.Include(x => x.District).Include(x => x.Property_Status).Include(x => x.Property_Type);
-            return View(properties.ToList());
-        }
-        public void PopularData(object propertyTypeSelected = null,object propertyStatusSelected = null,object citySelected = null,object districtSelected = null)
+
+        public void PopularData(object propertyTypeSelected = null, object propertyStatusSelected = null, object citySelected = null, object districtSelected = null)
         {
             ViewBag.Property_Type_ID = new SelectList(model.Property_Type.ToList(), "ID", "Property_Type_Name", propertyTypeSelected);
             ViewBag.Property_Status_ID = new SelectList(model.Property_Status.ToList(), "ID", "Property_Status_Name", propertyStatusSelected);
@@ -29,16 +25,14 @@ namespace WebApplication1.Controllers
         [HttpGet]
         public ActionResult Details(int? id)
         {
-            if(id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
+
             var property = model.Properties.Find(id);
-            if(property == null)
+            if (property == null)
             {
                 return HttpNotFound();
             }
             return View(property);
         }
+
     }
 }

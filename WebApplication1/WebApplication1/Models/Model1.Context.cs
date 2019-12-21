@@ -13,10 +13,10 @@ namespace WebApplication1.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class PPCDBEntities : DbContext
+    public partial class PPCDBEntities1 : DbContext
     {
-        public PPCDBEntities()
-            : base("name=PPCDBEntities")
+        public PPCDBEntities1()
+            : base("name=PPCDBEntities1")
         {
         }
     

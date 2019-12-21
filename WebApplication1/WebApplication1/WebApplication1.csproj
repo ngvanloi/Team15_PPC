@@ -185,9 +185,54 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\animate.css" />
+    <Content Include="Content\css\aos.css" />
+    <Content Include="Content\css\bootstrap-datepicker.css" />
+    <Content Include="Content\css\bootstrap.min.css" />
+    <Content Include="Content\css\fl-bigmug-line.css" />
+    <Content Include="Content\css\jquery-ui.css" />
+    <Content Include="Content\css\magnific-popup.css" />
+    <Content Include="Content\css\mediaelementplayer.css" />
+    <Content Include="Content\css\owl.carousel.min.css" />
+    <Content Include="Content\css\owl.theme.default.min.css" />
+    <Content Include="Content\css\progress-bar.css" />
+    <Content Include="Content\css\style.css" />
     <Content Include="Content\fl-bigmug-line.css" />
     <Content Include="Content\flaticon.css" />
+    <Content Include="Content\fonts\bigmug-line\fl-bigmug-line.svg" />
+    <Content Include="Content\fonts\flaticon-2\backup.txt" />
+    <Content Include="Content\fonts\flaticon-2\font\flaticon.css" />
+    <Content Include="Content\fonts\flaticon-2\font\flaticon.html" />
+    <Content Include="Content\fonts\flaticon-2\font\Flaticon.svg" />
+    <Content Include="Content\fonts\flaticon-2\font\_flaticon.css" />
+    <Content Include="Content\fonts\flaticon\backup.txt" />
+    <Content Include="Content\fonts\flaticon\font\flaticon.css" />
+    <Content Include="Content\fonts\flaticon\font\flaticon.html" />
+    <Content Include="Content\fonts\flaticon\font\Flaticon.svg" />
+    <Content Include="Content\fonts\flaticon\font\_flaticon.css" />
+    <Content Include="Content\fonts\icomoon\demo-files\demo.css" />
+    <Content Include="Content\fonts\icomoon\demo-files\demo.js" />
+    <Content Include="Content\fonts\icomoon\demo.html" />
+    <Content Include="Content\fonts\icomoon\fonts\icomoon.svg" />
+    <Content Include="Content\fonts\icomoon\Read Me.txt" />
+    <Content Include="Content\fonts\icomoon\style.css" />
     <Content Include="Content\jquery-ui.css" />
+    <Content Include="Content\js\aos.js" />
+    <Content Include="Content\js\bootstrap-datepicker.min.js" />
+    <Content Include="Content\js\bootstrap.min.js" />
+    <Content Include="Content\js\circleaudioplayer.js" />
+    <Content Include="Content\js\jquery-3.3.1.min.js" />
+    <Content Include="Content\js\jquery-migrate-3.0.1.min.js" />
+    <Content Include="Content\js\jquery-ui.js" />
+    <Content Include="Content\js\jquery.countdown.min.js" />
+    <Content Include="Content\js\jquery.magnific-popup.min.js" />
+    <Content Include="Content\js\jquery.stellar.min.js" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\mediaelement-and-player.min.js" />
+    <Content Include="Content\js\owl.carousel.min.js" />
+    <Content Include="Content\js\player.js" />
+    <Content Include="Content\js\popper.min.js" />
+    <Content Include="Content\js\slick.min.js" />
     <Content Include="Content\magnific-popup.css" />
     <Content Include="Content\mediaelementplayer.css" />
     <Content Include="Content\owl.carousel.min.css" />
@@ -245,8 +290,8 @@
     <Content Include="images\PPClogo.png" />
     <Content Include="Models\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="Models\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -257,13 +302,6 @@
     <Content Include="Scripts\bootstrap-datepicker.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
-    <EntityDeploy Include="Models\Model1.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\Model1.edmx.diagram">
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
     <Content Include="Content\bootstrap-grid.scss" />
     <Content Include="Content\bootstrap-reboot.scss" />
     <Content Include="Content\bootstrap.scss" />
@@ -311,6 +349,35 @@
     <Content Include="fonts\Flaticon.woff" />
     <Content Include="fonts\_flaticon.scss" />
     <Content Include="Content\_flaticon.scss" />
+    <EntityDeploy Include="Models\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="Content\js\.DS_Store" />
+    <Content Include="Content\css\.DS_Store" />
+    <Content Include="Content\fonts\.DS_Store" />
+    <Content Include="Content\fonts\bigmug-line\.DS_Store" />
+    <Content Include="Content\fonts\bigmug-line\fl-bigmug-line.eot" />
+    <Content Include="Content\fonts\bigmug-line\fl-bigmug-line.ttf" />
+    <Content Include="Content\fonts\bigmug-line\fl-bigmug-line.woff" />
+    <Content Include="Content\fonts\flaticon-2\.DS_Store" />
+    <Content Include="Content\fonts\flaticon-2\font\Flaticon.eot" />
+    <Content Include="Content\fonts\flaticon-2\font\Flaticon.ttf" />
+    <Content Include="Content\fonts\flaticon-2\font\Flaticon.woff" />
+    <Content Include="Content\fonts\flaticon-2\font\_flaticon.scss" />
+    <Content Include="Content\fonts\flaticon-2\license\license.pdf" />
+    <Content Include="Content\fonts\flaticon\font\Flaticon.eot" />
+    <Content Include="Content\fonts\flaticon\font\Flaticon.ttf" />
+    <Content Include="Content\fonts\flaticon\font\Flaticon.woff" />
+    <Content Include="Content\fonts\flaticon\font\_flaticon.scss" />
+    <Content Include="Content\fonts\flaticon\license\license.pdf" />
+    <Content Include="Content\fonts\icomoon\fonts\icomoon.eot" />
+    <Content Include="Content\fonts\icomoon\fonts\icomoon.ttf" />
+    <Content Include="Content\fonts\icomoon\fonts\icomoon.woff" />
+    <Content Include="Content\fonts\icomoon\selection.json" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\circleaudioplayer.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -349,7 +416,6 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Search.cshtml" />
-    <Content Include="Views\Properties\Index.cshtml" />
     <Content Include="Views\Properties\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
